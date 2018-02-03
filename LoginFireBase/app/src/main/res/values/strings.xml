@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Login FireBase</string>
+    <string name="facebook_app_id">2008532719473032</string>
+
+    <string name="com.twitter.sdk.android.CONSUMER_KEY">fHj4wpuQ4Z090aBvhPUOCLN2m</string>
+    <string name="com.twitter.sdk.android.CONSUMER_SECRET">YzZXDX1KutZc9pfc97HUugkdcRTYwr0Vs6nDnsDnuZgUfCZFNk</string>
+</resources>
