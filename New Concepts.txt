@@ -1,0 +1,8 @@
+Volley Guide - https://code.tutsplus.com/tutorials/an-introduction-to-volley--cms-23800
+
+RetroFit Guide -  https://code.tutsplus.com/tutorials/getting-started-with-retrofit-2--cms-27792
+		  https://code.tutsplus.com/tutorials/sending-data-with-retrofit-2-http-client-for-android--cms-27845
+
+GET and POST Request checks - https://jsonplaceholder.typicode.com/
+
+JSON to Pojo - http://www.jsonschema2pojo.org/
