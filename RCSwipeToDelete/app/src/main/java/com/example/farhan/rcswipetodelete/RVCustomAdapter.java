@@ -57,8 +57,13 @@ public class RVCustomAdapter extends RecyclerView.Adapter<RVCustomAdapter.RvCust
         // to perform recycler view delete animations
         // NOTE: don't call notifyDataSetChanged()
 
-
         notifyItemRemoved(position);
+    }
+
+    public void restoreItem(dataModel item, int position) {
+        modelArrayList.add(position, item);
+        // notify item added by position
+        notifyItemInserted(position);
     }
 
 }
