@@ -4,6 +4,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -15,11 +16,14 @@ import java.util.ArrayList;
 public class RVCustomAdapter extends RecyclerView.Adapter<RVCustomAdapter.RvCustomViewHolder> {
 
 
-    class RvCustomViewHolder extends RecyclerView.ViewHolder {
+    public class RvCustomViewHolder extends RecyclerView.ViewHolder {
         TextView mFruitsName;
+        RelativeLayout viewForeground;
 
         public RvCustomViewHolder(View itemView) {
             super(itemView);
+
+            viewForeground = itemView.findViewById(R.id.rvForeGround);
 
             mFruitsName = itemView.findViewById(R.id.tv_rvFruits);
         }

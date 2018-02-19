@@ -1,5 +1,6 @@
 package com.example.farhan.rcswipetodelete;
 
+import android.graphics.Canvas;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.design.widget.Snackbar;
@@ -8,6 +9,7 @@ import android.support.v7.widget.DividerItemDecoration;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.helper.ItemTouchHelper;
+import android.util.Log;
 import android.view.View;
 import android.widget.LinearLayout;
 
@@ -68,6 +70,40 @@ public class MainActivity extends AppCompatActivity {
                     snackbar.setActionTextColor(Color.YELLOW);
                     snackbar.show();
                 }
+            }
+
+            // The Current View Which the user Selected To Drag or Swipe
+            @Override
+            public void onSelectedChanged(RecyclerView.ViewHolder viewHolder, int actionState) {
+                Log.e("Tag","onSelectedChanged");
+                if (viewHolder != null) {
+                    View foregroundView = ((RVCustomAdapter.RvCustomViewHolder) viewHolder).viewForeground;
+                    getDefaultUIUtil().onSelected(foregroundView);
+                }
+            }
+
+            // The View which we need to User Interact with, appear underneath the views.
+            @Override
+            public void onChildDraw(Canvas c, RecyclerView recyclerView, RecyclerView.ViewHolder viewHolder, float dX, float dY, int actionState, boolean isCurrentlyActive) {
+                Log.e("Tag","onChildDraw");
+                View foregroundView = ((RVCustomAdapter.RvCustomViewHolder) viewHolder).viewForeground;
+                getDefaultUIUtil().onDrawOver(c, recyclerView, foregroundView, dX, dY, actionState, isCurrentlyActive);
+            }
+
+            // The View which we need to User Interact with, appear over the views.
+            @Override
+            public void onChildDrawOver(Canvas c, RecyclerView recyclerView, RecyclerView.ViewHolder viewHolder, float dX, float dY, int actionState, boolean isCurrentlyActive) {
+                Log.e("Tag","onChildDrawOver");
+                View foregroundView = ((RVCustomAdapter.RvCustomViewHolder) viewHolder).viewForeground;
+                getDefaultUIUtil().onDraw(c, recyclerView, foregroundView, dX, dY, actionState, isCurrentlyActive);
+            }
+
+            // Set the View when all the User Interaction is done
+            @Override
+            public void clearView(RecyclerView recyclerView, RecyclerView.ViewHolder viewHolder) {
+                Log.e("Tag","clearView");
+                View foregroundView = ((RVCustomAdapter.RvCustomViewHolder) viewHolder).viewForeground;
+                getDefaultUIUtil().clearView(foregroundView);
             }
 
         };
