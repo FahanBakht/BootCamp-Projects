@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.farhan.campussystem.Company.CreateCompanyProfile">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <ImageView
+                android:id="@+id/company_Profile_Image"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="#E0F2F1" />
+
+            <TextView
+                android:id="@+id/txt_Error_Insert_Image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/error_please_insert_image"
+                android:textColor="#ff0000"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/btn_Company_Profile_Add_Image"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:layout_gravity="end"
+                android:background="@color/btn_bg_color"
+                android:src="@drawable/ic_add_a_photo" />
+
+            <EditText
+                android:id="@+id/et_Profile_Company_Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:hint="@string/company_name"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/et_Profile_Company_AboutUs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:hint="@string/about_us"
+                android:inputType="textMultiLine" />
+
+            <EditText
+                android:id="@+id/et_Profile_Company_Contact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:hint="@string/contact"
+                android:inputType="phone" />
+
+            <EditText
+                android:id="@+id/et_Profile_Company_Email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/et_Profile_Company_Location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:hint="@string/location" />
+
+            <Button
+                android:id="@+id/btn_Create_Company_Profile"
+                style="@style/customButtonColor"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="70dp"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/done" />
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">Campus System</string>
+
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="don_t_have_an_account_signUp_now">Don\'t have an account ? SignUp now..!</string>
+    <string name="username">Username</string>
+    <string name="sign_up">Sign up</string>
+    <string name="sign_out">SignOut</string>
+
+    <string name="qualification">Qualification</string>
+    <string name="age">Age</string>
+    <string name="city">City</string>
+    <string name="company_name">Company name</string>
+    <string name="admin_name">Admin name</string>
+    <string name="name">Name</string>
+    <string name="role">Role</string>
+    <string name="job_type">Job type</string>
+    <string name="experience_level">Experience level</string>
+    <string name="salary">Salary</string>
+    <string name="company_size">Company size</string>
+    <string name="company_type">Company type</string>
+    <string name="industry">Industry</string>
+    <string name="job_description">Job description</string>
+    <string name="post_job">Post Job</string>
+    <string name="about_us">About Us</string>
+    <string name="contact">Contact</string>
+    <string name="location">Location</string>
+    <string name="available_jobs">Available Jobs</string>
+    <string name="no_job_available">No Job Available</string>
+    <string name="role_Tv">Role:</string>
+    <string name="job_type_Tv">Job Type:</string>
+    <string name="salary_Tv">Salary:</string>
+    <string name="experience_Tv">Experience:</string>
+    <string name="company_type_Tv">Company Type:</string>
+    <string name="company_size_Tv">Company Size:</string>
+    <string name="industry_Tv">Industry:</string>
+    <string name="job_description_Tv">Job Description:</string>
+    <string name="student_s_list_who_applied_for_the_job">Student\'s list who applied for the job</string>
+    <string name="there_are_no_student_who_applied_for_this_job">There are no student who applied for this job</string>
+    <string name="error_please_insert_image">Error: Please Insert Image</string>
+    <string name="done">Done</string>
+    <string name="apply">Apply</string>
+    <string name="name_Tv">Name:</string>
+    <string name="email_Tv">Email:</string>
+    <string name="qualification_tv">Qualification:</string>
+    <string name="age_tv">Age:</string>
+    <string name="there_are_no_companies_available">There are no Companies Available</string>
+    <string name="there_are_no_student_in_the_database">There are no student in the database</string>
+    <string name="there_are_no_companies_job_available">There are no companies job available</string>
+    <string name="create_your_company_profile">Create Your Company Profile..!</string>
+    <string name="about_us_Tv">About us:</string>
+    <string name="view_detail">View Detail</string>
+    <string name="there_is_no_student_in_the_database">There is no student in the database</string>
+    <string name="city_Tv">City:</string>
+    <string name="there_is_no_network_connection_is_found">There is no network connection is found...!</string>
+
+</resources>

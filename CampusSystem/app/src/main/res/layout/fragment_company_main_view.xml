@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/error_Create_Profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/create_your_company_profile"
+        android:textColor="#535353"
+        android:textSize="17sp"
+        android:visibility="gone"/>
+
+    <ProgressBar
+        android:id="@+id/progress_Company_MainView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+    <ScrollView
+        android:id="@+id/main_Root_ScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/company_Image"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/about_us"
+                android:textColor="#4e4e4e"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/company_AboutUs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingEnd="5dp"
+                android:paddingStart="20dp"
+                android:text="" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/contact"
+                android:textColor="#4e4e4e"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/company_Contact"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingEnd="2dp"
+                android:paddingStart="20dp"
+                android:autoLink="phone"
+                android:textColorLink="#00695C"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/email"
+                android:textColor="#4e4e4e"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/company_Email"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:autoLink="email"
+                android:paddingEnd="2dp"
+                android:paddingStart="20dp"
+                android:textColorLink="#00695C" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/location"
+                android:textColor="#4e4e4e"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/company_location"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:autoLink="map"
+                android:paddingEnd="20dp"
+                android:paddingStart="20dp"
+                android:layout_marginBottom="10dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/role_Tv"
+                android:textColor="#4e4e4e"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/student_Job_Apply_Role"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingEnd="5dp"
+                android:paddingStart="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/job_type_Tv"
+                android:textColor="#4e4e4e"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/student_Job_Apply_Type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingEnd="5dp"
+                android:paddingStart="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/salary_Tv"
+                android:textColor="#4e4e4e"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/student_Job_Apply_Salary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingEnd="5dp"
+                android:paddingStart="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/experience_Tv"
+                android:textColor="#4e4e4e"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/student_Job_Apply_Experience"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingEnd="5dp"
+                android:paddingStart="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/company_type_Tv"
+                android:textColor="#4e4e4e"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/student_Job_Apply_CompanyType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingEnd="5dp"
+                android:paddingStart="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/company_size_Tv"
+                android:textColor="#4e4e4e"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/student_Job_Apply_CompanySize"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingEnd="5dp"
+                android:paddingStart="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/industry_Tv"
+                android:textColor="#4e4e4e"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/student_Job_Apply_Industry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingEnd="5dp"
+                android:paddingStart="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/job_description_Tv"
+                android:textColor="#4e4e4e"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/student_Job_Apply_JobDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingEnd="5dp"
+                android:paddingStart="20dp" />
+
+            <Button
+                android:id="@+id/btn_student_Job_Apply"
+                style="@style/customButtonColor"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginEnd="70dp"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="30dp"
+                android:text="@string/apply"
+                android:textAllCaps="false" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
