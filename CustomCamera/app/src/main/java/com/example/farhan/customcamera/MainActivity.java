@@ -16,6 +16,7 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
+import static android.hardware.Camera.CameraInfo.CAMERA_FACING_BACK;
 import static android.os.Environment.DIRECTORY_PICTURES;
 
 public class MainActivity extends AppCompatActivity {
@@ -23,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
     private FrameLayout camera_Preview_Frame;
     private Camera camera;
     private CameraPreview cameraPreview;
+    private static boolean check = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,18 +39,36 @@ public class MainActivity extends AppCompatActivity {
         fab_Capture_Img.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                camera.takePicture(myShutterCallback, null, pictureCallback);
+                if (check) {
+                    camera.autoFocus(new Camera.AutoFocusCallback() {
+                        @Override
+                        public void onAutoFocus(boolean success, Camera camera) {
+                            Log.e("TAG", "onAutoFocus: Auto Focus CallBAck Runs" );
+                            camera.takePicture(myShutterCallback, null, pictureCallback);
+                        }
+                    });
+                    check = false;
+                }
             }
         });
 
     }
 
-    private void initCamera(){
+    private void initCamera() {
         if (checkCameraHardware()) {
             camera = getCameraInstance();
+
             cameraPreview = new CameraPreview(this, camera);
             camera_Preview_Frame.addView(cameraPreview);
             setFocus();
+            check = true;
+
+            camera.setPreviewCallback(new Camera.PreviewCallback() {
+                @Override
+                public void onPreviewFrame(byte[] data, Camera camera) {
+                    Log.e("TAG", "onPreviewFrame: onPreview Runs");
+                }
+            });
 
         } else {
             Toast.makeText(getApplicationContext(), "Device not support camera feature", Toast.LENGTH_SHORT).show();
@@ -76,7 +96,6 @@ public class MainActivity extends AppCompatActivity {
                 Log.e("tag", "Error creating media file, check storage permissions: ");
                 return;
             }
-
             try {
                 FileOutputStream fos = new FileOutputStream(file);
                 fos.write(data);
@@ -88,20 +107,21 @@ public class MainActivity extends AppCompatActivity {
                 e.printStackTrace();
             }
             camera.startPreview();
+            check = true;
         }
     };
 
     Camera.ShutterCallback myShutterCallback = new Camera.ShutterCallback() {
         @Override
         public void onShutter() {
-            // TODO Auto-generated method stub
+
         }
     };
 
     public static Camera getCameraInstance() {
         Camera c = null;
         try {
-            c = Camera.open();
+            c = Camera.open(CAMERA_FACING_BACK);
         } catch (Exception e) {
             Log.e("TAG", "getCameraInstance: No Camera Found");
         }
@@ -120,18 +140,18 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onRestart() {
         super.onRestart();
-        Log.e("TAG", "onRestart: onRestart" );
+        Log.e("TAG", "onRestart: onRestart");
         initCamera();
     }
 
     @Override
     protected void onPause() {
         super.onPause();
-        if (camera != null){
+        if (camera != null) {
             camera_Preview_Frame.removeAllViews();
             camera.release();
             camera = null;
-            Log.e("TAG", "onPause: onPause" );
+            Log.e("TAG", "onPause: onPause");
         }
     }
 }
