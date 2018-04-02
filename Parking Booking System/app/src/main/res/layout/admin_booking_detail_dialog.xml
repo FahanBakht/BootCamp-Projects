@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.farhan.parkingbookingsystem.Users.BookingDetailActivity">
+
+    <ScrollView
+        android:id="@+id/main_Root_ScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/user_name"
+                android:textColor="#e4e4e4"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/txt_Admin_Booking_dialog_UserName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingEnd="5dp"
+                android:paddingStart="20dp"
+                android:textColor="#f4f4f4" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="15dp"
+                android:text="@string/email_txt"
+                android:textColor="#e4e4e4"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/txt_Admin_Booking_dialog_UserEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingEnd="5dp"
+                android:paddingStart="20dp"
+                android:textColor="#f4f4f4" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="15dp"
+                android:text="@string/cnic_number_txt"
+                android:textColor="#e4e4e4"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/txt_Admin_Booking_dialog_UserCnicNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingEnd="5dp"
+                android:paddingStart="20dp"
+                android:textColor="#f4f4f4" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="15dp"
+                android:text="@string/car_name_txt"
+                android:textColor="#e4e4e4"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/txt_Admin_Booking_dialog_UserCarName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingEnd="5dp"
+                android:paddingStart="20dp"
+                android:textColor="#f4f4f4" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="15dp"
+                android:text="@string/car_license_number"
+                android:textColor="#e4e4e4"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/txt_Admin_Booking_dialog_UserCarLicenseNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingEnd="5dp"
+                android:paddingStart="20dp"
+                android:textColor="#f4f4f4" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="15dp"
+                android:text="@string/parking_mall"
+                android:textColor="#e4e4e4"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/txt_Admin_Booking_dialog_UserParkingMall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingEnd="5dp"
+                android:paddingStart="20dp"
+                android:textColor="#f4f4f4" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="15dp"
+                android:text="@string/parking_area"
+                android:textColor="#e4e4e4"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/txt_Admin_Booking_dialog_UserParkingArea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingEnd="5dp"
+                android:paddingStart="20dp"
+                android:textColor="#f4f4f4" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="15dp"
+                android:text="@string/parking_slot"
+                android:textColor="#e4e4e4"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/txt_Admin_Booking_dialog_UserParkingSlot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingEnd="5dp"
+                android:paddingStart="20dp"
+                android:textColor="#f4f4f4" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="15dp"
+                android:text="@string/parking_time"
+                android:textColor="#e4e4e4"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/txt_Admin_Booking_dialog_UserParkingTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingEnd="5dp"
+                android:paddingStart="20dp"
+                android:textColor="#f4f4f4" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="15dp"
+                android:text="@string/selected_hours"
+                android:textColor="#e4e4e4"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/txt_Admin_Booking_dialog_UserSelectedHours"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingEnd="5dp"
+                android:paddingStart="20dp"
+                android:textColor="#f4f4f4" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="15dp"
+                android:text="@string/parking_date"
+                android:textColor="#e4e4e4"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/txt_Admin_Booking_dialog_UserParkingDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingEnd="5dp"
+                android:paddingStart="20dp"
+                android:textColor="#f4f4f4" />
+
+            <Button
+                android:id="@+id/btn_Admin_Booking_dialog_CancelBooking"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="56dp"
+                android:layout_marginStart="65dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/cancel_booking"
+                android:textAllCaps="false"
+                android:textColor="#fff" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

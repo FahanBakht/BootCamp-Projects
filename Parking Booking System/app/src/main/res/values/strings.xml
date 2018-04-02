@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">Parking Booking System</string>
+
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="don_t_have_an_account_signUp_now">Don\'t have an account ? SignUp now..!</string>
+    <string name="username">Username</string>
+    <string name="sign_up">Sign up</string>
+    <string name="sign_out">SignOut</string>
+    <string name="there_is_no_network_connection_is_found">There is no network connection is found...!</string>
+    <string name="name">Name</string>
+    <string name="cnic_number">CNIC Number</string>
+    <string name="car_name">Car Name</string>
+    <string name="car_license_plate_number">Car license plate Number</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="user_name">User Name:</string>
+    <string name="email_txt">Email:</string>
+    <string name="cnic_number_txt">Cnic Number:</string>
+    <string name="car_name_txt">Car Name:</string>
+    <string name="car_license_number">Car License Number:</string>
+    <string name="parking_mall">Parking Mall:</string>
+    <string name="parking_area">Parking Area:</string>
+    <string name="parking_slot">Parking Slot:</string>
+    <string name="parking_time">Parking Time</string>
+    <string name="selected_hours">Selected Hours:</string>
+    <string name="parking_date">Parking Date:</string>
+    <string name="cancel_booking">Cancel Booking</string>
+    <string name="date">Date</string>
+    <string name="there_are_no_users_in_database">There are no Users in database</string>
+    <string name="there_are_currently_no_booking">There are currently no booking</string>
+    <string name="there_are_no_feed_backs">There are no feed backs</string>
+    <string name="your_bookings">Your Bookings</string>
+    <string name="you_haven_t_booked_any_parking">You haven\'t Booked Any Parking</string>
+    <string name="book_now">Book Now</string>
+    <string name="admin">Admin</string>
+    <string name="admin_reply">Admin Reply:</string>
+    <string name="user">User:</string>
+    <string name="mall">Mall:</string>
+    <string name="car">Car:</string>
+    <string name="read_more">Read More</string>
+    <string name="show_available_slots">Show Available Slots</string>
+    <string name="select_duration">Select Duration:</string>
+    <string name="selected_time">Selected Time</string>
+    <string name="book_parking_now">Book Parking Now</string>
+    <string name="selected_date">Selected Date:</string>
+    <string name="select_hours">Select Hours</string>
+
+</resources>
