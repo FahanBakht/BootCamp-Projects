@@ -16,9 +16,9 @@ class Utils {
         var user: String = ""
         fun init(context: Context) {
 
-            val USER_POOL_ID = " us-east-1_cXbd4tqPT"
-            val APP_CLIENT_ID = "4pqfbq2u4pka1kh767ul520qat"
-            val COGNITO_REGION = Regions.US_EAST_1
+            val USER_POOL_ID = "Your User Pool Id"
+            val APP_CLIENT_ID = "Your user app client id"
+            val COGNITO_REGION = You region
             val APP_SECRET = null
 
             var utils: Utils? = null
